@@ -3,8 +3,8 @@ plugins {
 	id("com.gradle.plugin-publish") version "1.1.0"
 }
 
-group = "com.biron"
-version = "1.0.1"
+group = "com.biron-analytics"
+version = "1.0.0"
 
 
 repositories {
@@ -20,10 +20,17 @@ pluginBundle {
 gradlePlugin {
 	plugins {
 		create("gradle-utils") {
-			id = "com.biron.gradle-utils"
+			id = "com.biron-analytics"
 			displayName = "Biron gradle utils"
-			description = "Provide a small utility function to extract dependency version from gradle properties based on an extra key"
+			description = "Provide a small utility function to extract dependency version from gradle properties"
 			implementationClass = "com.biron.gradleUtils.BironUtilsPlugin"
 		}
 	}
 }
+
+publishing {
+	repositories {
+		mavenLocal()
+	}
+}
+
