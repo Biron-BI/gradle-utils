@@ -3,7 +3,7 @@ Provide a small utility function to extract dependency version from gradle prope
 ## Usage
 ```kotlin
 plugins {
-	id("com.biron.gradle-utils") version "1.0.1"
+	id("com.biron-analytics.gradle-utils") version "1.0.1"
 }
 ```
 

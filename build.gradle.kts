@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.biron-analytics"
-version = "1.0.0"
+version = "1.0.1"
 
 
 repositories {
@@ -20,7 +20,7 @@ pluginBundle {
 gradlePlugin {
 	plugins {
 		create("gradle-utils") {
-			id = "com.biron-analytics"
+			id = "com.biron-analytics.gradle-utils"
 			displayName = "Biron gradle utils"
 			description = "Provide a small utility function to extract dependency version from gradle properties"
 			implementationClass = "com.biron.gradleUtils.BironUtilsPlugin"
